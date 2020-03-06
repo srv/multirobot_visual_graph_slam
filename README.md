@@ -49,7 +49,7 @@ It is important to notice that the images have been named with consecutive numbe
 === RUN THE CODE ===
 ====================
 
-First of all, just to test the provided sources with the provided real marine dataset, unzip the provided compressed file which contain the images in a directory called "/data/images/ValldemossaGopro" which will be created in the directory where you put the Multi-robot matlab sources. In the directory "data" put the loopclosings.csv file and both odometry matlab  "odoData.mat" and "odoData2.mat" files also provided for this dataset.
+First of all, just to test the provided sources with the provided real marine dataset, unzip the provided compressed file which contain the images in a directory called "/data/images/ValldemossaGopro" which will be created in the directory where you put the Multi-robot matlab sources. In the directory "data" put the loopclosings.csv file and both odometry matlab  "odoData.mat" and "odoData2.mat" files also provided for this dataset in two zips called "images.zip" and "loopclosings_odometry.zip".
 
 Within the source directory there is a "main.m" file. Execute it to see an example:
 
