@@ -42,13 +42,15 @@ In case of errors, check your Matlab MEX configuration by typing "help mex" and 
 If the problem persists, a pure Matlab implementation of the MEX file is provided: least_squares_cartesian. Just search calls to least_squares_cartesian_mex within all provided Matlab sources and change them to least_squares_cartesian.
 
 The package contains the sources, and the data to run a sample dataset: the loop closings file, the odometry of both sessions and the images. 
-It is important to notice that the images have been named with consecutive numbers, and they are stored consecutively, that is, first all images of session 1, and the all images of session 2. The numeric name of the first image of trajectory 2 corresponds to the nummeric name of the last image of session 1, plus 1. For instance, in the case of the provided dataset, images from 1.png to 226.png correspond to trajectory 1, and images from 227.png to 425.png correspond to trajectory 2. This configuration is a must to run the code successfully, cause this image number is later associated to the graph node Id. The original resolution was 1920X1632 pixels, but this downsampling has been necessary to upload them into the github. If you want the original frames, just request them to: francisco.bonin@uib.es. 
+It is important to notice that the images have been named with consecutive numbers, and they are stored consecutively, that is, first all images of session 1, and the all images of session 2. The numeric name of the first image of trajectory 2 corresponds to the nummeric name of the last image of session 1, plus 1. For instance, in the case of the provided dataset, images from 1.png to 226.png correspond to trajectory 1, and images from 227.png to 425.png correspond to trajectory 2. And all must be in the same directory. This configuration is a must to run the code successfully, cause this image number is later associated to the graph node Id. 
+Images have been resize to a considerable low resolution. The original resolution was 1920X1632 pixels, but this downsampling has been necessary to upload them into the github. If you want the original frames, just request them to: francisco.bonin@uib.es. 
+
 
 ====================
 === RUN THE CODE ===
 ====================
 
-First of all, just to test the provided sources with the provided real marine dataset, unzip the provided compressed file which contain the images in a directory called "/data/images/ValldemossaGopro" which will be created in the directory where you put the Multi-robot matlab sources. In the directory "data" put the loopclosings.csv file and both odometry matlab  "odoData.mat" and "odoData2.mat" files also provided for this dataset in two zips called "images.zip" and "loopclosings_odometry.zip".
+First of all, just to test the provided sources with the provided real marine dataset, unzip the contents of the provided compressed files "session2.zip" and "session2.zip", which contain the images of both sessions, in a single directory called "/data/images/ValldemossaGopro", which will be created in the directory where you put the Multi-robot matlab sources. In the directory "data" put the loopclosings.csv file and both odometry matlab  "odoData.mat" and "odoData2.mat" files also provided for this dataset in two zips called "images.zip" and "loopclosings_odometry.zip".
 
 Within the source directory there is a "main.m" file. Execute it to see an example:
 
