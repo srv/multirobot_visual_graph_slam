@@ -1,4 +1,4 @@
-# Multi-Robot-Visual-Graph-SLAM
+# Multi Robot Visual Graph SLAM
 ==============
 === CREDIT ===
 ==============
