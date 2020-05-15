@@ -113,3 +113,5 @@ Within this funcion, there are some parameters that you may need to modify:
 =======================
 
 This software package has been tested using Matlab 8.5.0.197613 (R2015a) running on Ubuntu 16.04LTS with GCC 5.4.0., and also using Matlab R2018a (9.4.0.813654) running on Ubuntu 18.04 LTS.  Other configurations are untested.
+
+All sources are still under development, and subject to further changes and improvements. 
